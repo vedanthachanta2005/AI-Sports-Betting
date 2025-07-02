@@ -1,64 +1,62 @@
 body {
-  background-color: #1e1e1e;
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1b1b1b;
+  color: #f0f0f0;
 }
 
-.window {
-  background-color: #2d2d30;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  width: 400px;
-  overflow: hidden;
-}
-
-.title-bar {
-  background-color: #3b3b3d;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-}
-
-.window-buttons {
-  display: flex;
-  gap: 5px;
-}
-
-.btn {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
-
-.close { background-color: #ff5f56; }
-.minimize { background-color: #ffbd2e; }
-.maximize { background-color: #27c93f; }
-
-.content {
+header {
+  background-color: #262626;
   padding: 20px;
-  color: white;
+  text-align: center;
+  border-bottom: 2px solid #444;
 }
 
-.gui-button {
-  padding: 10px 20px;
-  background-color: #0078d7;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #4ad991;
+}
+
+main {
+  padding: 30px;
+}
+
+.odds-table {
+  background: #2d2d2d;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
   margin-top: 10px;
 }
 
-.gui-button:hover {
-  background-color: #005a9e;
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+tr:hover {
+  background-color: #444444;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #262626;
+  color: #999;
+  font-size: 0.9rem;
 }
