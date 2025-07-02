@@ -1,3 +1,7 @@
+function alertComingSoon(sport) {
+  alert(`${sport} odds coming soon! Stay tuned.`);
+}
+
 fetch('data/tennis-odds.json')
   .then(res => res.json())
   .then(data => {

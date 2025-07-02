@@ -1,62 +1,61 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #1b1b1b;
-  color: #f0f0f0;
+nav {
+  margin-top: 15px;
 }
 
-header {
-  background-color: #262626;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid #444;
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2rem;
+.nav-links li a {
+  color: #4ad991;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  min-width: 100px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 8px 12px;
+}
+
+.dropdown-content li a {
+  display: block;
   color: #4ad991;
 }
 
-main {
-  padding: 30px;
+.reviews {
+  margin-top: 40px;
 }
 
-.odds-table {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-th, td {
-  padding: 12px 15px;
-  text-align: center;
-}
-
-th {
-  background-color: #3b3b3b;
-  color: #ffffff;
-}
-
-tr:nth-child(even) {
-  background-color: #2a2a2a;
-}
-
-tr:hover {
-  background-color: #444444;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #262626;
-  color: #999;
-  font-size: 0.9rem;
+.review-card {
+  background-color: #2d2d2d;
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 4px solid #4ad991;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
