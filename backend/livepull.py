@@ -13,10 +13,15 @@ lf = kagglehub.load_dataset(
     file_path
 )
 
-# Optional: convert to DataFrame (eager) and print first 5 rows
+# Collect into memory (eager execution)
 df = lf.collect()
+
+# Print first 5 records
 print("First 5 records:\n", df.head())
 
-# Optional: Save as CSV locally
+# Print last 5 records
+print("\nLast 5 records:\n", df.tail())
+
+# Save as CSV locally
 df.write_csv("backend/live_atp_tennis.csv")
 print("✅ CSV successfully saved to backend/live_atp_tennis.csv")
